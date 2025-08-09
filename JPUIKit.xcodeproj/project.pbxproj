@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7433E1482E4554E200B9B977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7433E13E2E4554E200B9B977 /* Assets.xcassets */; };
+		7433E14A2E4554E200B9B977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7433E1422E4554E200B9B977 /* LaunchScreen.storyboard */; };
+		7433E14B2E4554E200B9B977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7433E1442E4554E200B9B977 /* Main.storyboard */; };
+		7433E14C2E4554E200B9B977 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E11E2E4554E200B9B977 /* FinalView.swift */; };
+		7433E14D2E4554E200B9B977 /* ReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1202E4554E200B9B977 /* ReadyView.swift */; };
+		7433E14E2E4554E200B9B977 /* StrikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1222E4554E200B9B977 /* StrikeView.swift */; };
+		7433E14F2E4554E200B9B977 /* ChooseJPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1242E4554E200B9B977 /* ChooseJPView.swift */; };
+		7433E1502E4554E200B9B977 /* ChooseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1252E4554E200B9B977 /* ChooseViewModel.swift */; };
+		7433E1512E4554E200B9B977 /* JokersEmun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1272E4554E200B9B977 /* JokersEmun.swift */; };
+		7433E1522E4554E200B9B977 /* JPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1282E4554E200B9B977 /* JPEnum.swift */; };
+		7433E1532E4554E200B9B977 /* NavigationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1292E4554E200B9B977 /* NavigationEnum.swift */; };
+		7433E1542E4554E200B9B977 /* StrikeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E12A2E4554E200B9B977 /* StrikeEnum.swift */; };
+		7433E1552E4554E200B9B977 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E12C2E4554E200B9B977 /* GameModel.swift */; };
+		7433E1562E4554E200B9B977 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E12D2E4554E200B9B977 /* GameView.swift */; };
+		7433E1572E4554E200B9B977 /* Infoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E12F2E4554E200B9B977 /* Infoview.swift */; };
+		7433E1582E4554E200B9B977 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1312E4554E200B9B977 /* CheckLink.swift */; };
+		7433E1592E4554E200B9B977 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1322E4554E200B9B977 /* InternetViewController.swift */; };
+		7433E15A2E4554E200B9B977 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1332E4554E200B9B977 /* LoaderViewController.swift */; };
+		7433E15B2E4554E200B9B977 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1352E4554E200B9B977 /* ProfileView.swift */; };
+		7433E15C2E4554E200B9B977 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1372E4554E200B9B977 /* SettingsView.swift */; };
+		7433E15D2E4554E200B9B977 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1392E4554E200B9B977 /* StartView.swift */; };
+		7433E15E2E4554E200B9B977 /* UnlockJokerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E13B2E4554E200B9B977 /* UnlockJokerView.swift */; };
+		7433E15F2E4554E200B9B977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E13D2E4554E200B9B977 /* AppDelegate.swift */; };
+		7433E1602E4554E200B9B977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7433E1452E4554E200B9B977 /* SceneDelegate.swift */; };
+		743F546E2E3AB5A4004E1E8C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 743F546D2E3AB5A4004E1E8C /* OneSignalExtension */; };
+		743F54702E3AB5A4004E1E8C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 743F546F2E3AB5A4004E1E8C /* OneSignalFramework */; };
+		743F54722E3AB5A4004E1E8C /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 743F54712E3AB5A4004E1E8C /* OneSignalInAppMessages */; };
+		743F54742E3AB5A4004E1E8C /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 743F54732E3AB5A4004E1E8C /* OneSignalLocation */; };
+		743F54772E3AB5B6004E1E8C /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 743F54762E3AB5B6004E1E8C /* AppsFlyerLib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18B70DED27029C7A6C6370BD /* Pods_JPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7433E11E2E4554E200B9B977 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
+		7433E1202E4554E200B9B977 /* ReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyView.swift; sourceTree = "<group>"; };
+		7433E1222E4554E200B9B977 /* StrikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeView.swift; sourceTree = "<group>"; };
+		7433E1242E4554E200B9B977 /* ChooseJPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseJPView.swift; sourceTree = "<group>"; };
+		7433E1252E4554E200B9B977 /* ChooseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewModel.swift; sourceTree = "<group>"; };
+		7433E1272E4554E200B9B977 /* JokersEmun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokersEmun.swift; sourceTree = "<group>"; };
+		7433E1282E4554E200B9B977 /* JPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPEnum.swift; sourceTree = "<group>"; };
+		7433E1292E4554E200B9B977 /* NavigationEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationEnum.swift; sourceTree = "<group>"; };
+		7433E12A2E4554E200B9B977 /* StrikeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeEnum.swift; sourceTree = "<group>"; };
+		7433E12C2E4554E200B9B977 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		7433E12D2E4554E200B9B977 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7433E12F2E4554E200B9B977 /* Infoview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infoview.swift; sourceTree = "<group>"; };
+		7433E1312E4554E200B9B977 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		7433E1322E4554E200B9B977 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		7433E1332E4554E200B9B977 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		7433E1352E4554E200B9B977 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7433E1372E4554E200B9B977 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7433E1392E4554E200B9B977 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		7433E13B2E4554E200B9B977 /* UnlockJokerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockJokerView.swift; sourceTree = "<group>"; };
+		7433E13D2E4554E200B9B977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7433E13E2E4554E200B9B977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7433E13F2E4554E200B9B977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7433E1402E4554E200B9B977 /* JPUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JPUIKit.entitlements; sourceTree = "<group>"; };
+		7433E1412E4554E200B9B977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7433E1432E4554E200B9B977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7433E1452E4554E200B9B977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		744A22142DDA558700BED6B1 /* JPUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7542FE988AA7AD77586E753C /* Pods-JPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUIKit.release.xcconfig"; path = "Target Support Files/Pods-JPUIKit/Pods-JPUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		9240280E203CF4E74AF6C678 /* Pods-JPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUIKit.debug.xcconfig"; path = "Target Support Files/Pods-JPUIKit/Pods-JPUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744A22112DDA558700BED6B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743F54722E3AB5A4004E1E8C /* OneSignalInAppMessages in Frameworks */,
+				743F54772E3AB5B6004E1E8C /* AppsFlyerLib in Frameworks */,
+				743F54702E3AB5A4004E1E8C /* OneSignalFramework in Frameworks */,
+				743F54742E3AB5A4004E1E8C /* OneSignalLocation in Frameworks */,
+				743F546E2E3AB5A4004E1E8C /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AEAEA8A3BDE0C5DC94E56B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B70DED27029C7A6C6370BD /* Pods_JPUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7433E11F2E4554E200B9B977 /* Final */ = {
+			isa = PBXGroup;
+			children = (
+				7433E11E2E4554E200B9B977 /* FinalView.swift */,
+			);
+			path = Final;
+			sourceTree = "<group>";
+		};
+		7433E1212E4554E200B9B977 /* Ready */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1202E4554E200B9B977 /* ReadyView.swift */,
+			);
+			path = Ready;
+			sourceTree = "<group>";
+		};
+		7433E1232E4554E200B9B977 /* Strike */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1222E4554E200B9B977 /* StrikeView.swift */,
+			);
+			path = Strike;
+			sourceTree = "<group>";
+		};
+		7433E1262E4554E200B9B977 /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				7433E11F2E4554E200B9B977 /* Final */,
+				7433E1212E4554E200B9B977 /* Ready */,
+				7433E1232E4554E200B9B977 /* Strike */,
+				7433E1242E4554E200B9B977 /* ChooseJPView.swift */,
+				7433E1252E4554E200B9B977 /* ChooseViewModel.swift */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
+		7433E12B2E4554E200B9B977 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1272E4554E200B9B977 /* JokersEmun.swift */,
+				7433E1282E4554E200B9B977 /* JPEnum.swift */,
+				7433E1292E4554E200B9B977 /* NavigationEnum.swift */,
+				7433E12A2E4554E200B9B977 /* StrikeEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7433E12E2E4554E200B9B977 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				7433E12C2E4554E200B9B977 /* GameModel.swift */,
+				7433E12D2E4554E200B9B977 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		7433E1302E4554E200B9B977 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				7433E12F2E4554E200B9B977 /* Infoview.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		7433E1342E4554E200B9B977 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1312E4554E200B9B977 /* CheckLink.swift */,
+				7433E1322E4554E200B9B977 /* InternetViewController.swift */,
+				7433E1332E4554E200B9B977 /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		7433E1362E4554E200B9B977 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1352E4554E200B9B977 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7433E1382E4554E200B9B977 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1372E4554E200B9B977 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7433E13A2E4554E200B9B977 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1392E4554E200B9B977 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		7433E13C2E4554E200B9B977 /* UnlockLoker */ = {
+			isa = PBXGroup;
+			children = (
+				7433E13B2E4554E200B9B977 /* UnlockJokerView.swift */,
+			);
+			path = UnlockLoker;
+			sourceTree = "<group>";
+		};
+		7433E1472E4554E200B9B977 /* JPUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7433E1262E4554E200B9B977 /* Choose */,
+				7433E12B2E4554E200B9B977 /* Enums */,
+				7433E12E2E4554E200B9B977 /* Game */,
+				7433E1302E4554E200B9B977 /* Info */,
+				7433E1342E4554E200B9B977 /* LoadingView */,
+				7433E1362E4554E200B9B977 /* Profile */,
+				7433E1382E4554E200B9B977 /* Settings */,
+				7433E13A2E4554E200B9B977 /* Start */,
+				7433E13C2E4554E200B9B977 /* UnlockLoker */,
+				7433E13D2E4554E200B9B977 /* AppDelegate.swift */,
+				7433E13E2E4554E200B9B977 /* Assets.xcassets */,
+				7433E13F2E4554E200B9B977 /* Info.plist */,
+				7433E1402E4554E200B9B977 /* JPUIKit.entitlements */,
+				7433E1422E4554E200B9B977 /* LaunchScreen.storyboard */,
+				7433E1442E4554E200B9B977 /* Main.storyboard */,
+				7433E1452E4554E200B9B977 /* SceneDelegate.swift */,
+			);
+			path = JPUIKit;
+			sourceTree = "<group>";
+		};
+		744A220B2DDA558700BED6B1 = {
+			isa = PBXGroup;
+			children = (
+				7433E1472E4554E200B9B977 /* JPUIKit */,
+				744A22152DDA558700BED6B1 /* Products */,
+				B062F221BD05606BF6911E8E /* Pods */,
+				4AEAEA8A3BDE0C5DC94E56B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		744A22152DDA558700BED6B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744A22142DDA558700BED6B1 /* JPUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B062F221BD05606BF6911E8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9240280E203CF4E74AF6C678 /* Pods-JPUIKit.debug.xcconfig */,
+				7542FE988AA7AD77586E753C /* Pods-JPUIKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744A22132DDA558700BED6B1 /* JPUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744A22272DDA558800BED6B1 /* Build configuration list for PBXNativeTarget "JPUIKit" */;
+			buildPhases = (
+				A80943970A55EC8101AE908B /* [CP] Check Pods Manifest.lock */,
+				744A22102DDA558700BED6B1 /* Sources */,
+				744A22112DDA558700BED6B1 /* Frameworks */,
+				744A22122DDA558700BED6B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPUIKit;
+			packageProductDependencies = (
+				743F546D2E3AB5A4004E1E8C /* OneSignalExtension */,
+				743F546F2E3AB5A4004E1E8C /* OneSignalFramework */,
+				743F54712E3AB5A4004E1E8C /* OneSignalInAppMessages */,
+				743F54732E3AB5A4004E1E8C /* OneSignalLocation */,
+				743F54762E3AB5B6004E1E8C /* AppsFlyerLib */,
+			);
+			productName = JPUIKit;
+			productReference = 744A22142DDA558700BED6B1 /* JPUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744A220C2DDA558700BED6B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					744A22132DDA558700BED6B1 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 744A220F2DDA558700BED6B1 /* Build configuration list for PBXProject "JPUIKit" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 744A220B2DDA558700BED6B1;
+			packageReferences = (
+				743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				743F54752E3AB5B6004E1E8C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
+			productRefGroup = 744A22152DDA558700BED6B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744A22132DDA558700BED6B1 /* JPUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		744A22122DDA558700BED6B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7433E1482E4554E200B9B977 /* Assets.xcassets in Resources */,
+				7433E14A2E4554E200B9B977 /* LaunchScreen.storyboard in Resources */,
+				7433E14B2E4554E200B9B977 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A80943970A55EC8101AE908B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JPUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744A22102DDA558700BED6B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7433E14C2E4554E200B9B977 /* FinalView.swift in Sources */,
+				7433E14D2E4554E200B9B977 /* ReadyView.swift in Sources */,
+				7433E14E2E4554E200B9B977 /* StrikeView.swift in Sources */,
+				7433E14F2E4554E200B9B977 /* ChooseJPView.swift in Sources */,
+				7433E1502E4554E200B9B977 /* ChooseViewModel.swift in Sources */,
+				7433E1512E4554E200B9B977 /* JokersEmun.swift in Sources */,
+				7433E1522E4554E200B9B977 /* JPEnum.swift in Sources */,
+				7433E1532E4554E200B9B977 /* NavigationEnum.swift in Sources */,
+				7433E1542E4554E200B9B977 /* StrikeEnum.swift in Sources */,
+				7433E1552E4554E200B9B977 /* GameModel.swift in Sources */,
+				7433E1562E4554E200B9B977 /* GameView.swift in Sources */,
+				7433E1572E4554E200B9B977 /* Infoview.swift in Sources */,
+				7433E1582E4554E200B9B977 /* CheckLink.swift in Sources */,
+				7433E1592E4554E200B9B977 /* InternetViewController.swift in Sources */,
+				7433E15A2E4554E200B9B977 /* LoaderViewController.swift in Sources */,
+				7433E15B2E4554E200B9B977 /* ProfileView.swift in Sources */,
+				7433E15C2E4554E200B9B977 /* SettingsView.swift in Sources */,
+				7433E15D2E4554E200B9B977 /* StartView.swift in Sources */,
+				7433E15E2E4554E200B9B977 /* UnlockJokerView.swift in Sources */,
+				7433E15F2E4554E200B9B977 /* AppDelegate.swift in Sources */,
+				7433E1602E4554E200B9B977 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7433E1422E4554E200B9B977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7433E1412E4554E200B9B977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7433E1442E4554E200B9B977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7433E1432E4554E200B9B977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		744A22282DDA558800BED6B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9240280E203CF4E74AF6C678 /* Pods-JPUIKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JPUIKit/JPUIKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JPUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Joker Parade";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mar.j0k3rp4r4de;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		744A22292DDA558800BED6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7542FE988AA7AD77586E753C /* Pods-JPUIKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JPUIKit/JPUIKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JPUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Joker Parade";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mar.j0k3rp4r4de;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		744A222A2DDA558800BED6B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		744A222B2DDA558800BED6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744A220F2DDA558700BED6B1 /* Build configuration list for PBXProject "JPUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744A222A2DDA558800BED6B1 /* Debug */,
+				744A222B2DDA558800BED6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744A22272DDA558800BED6B1 /* Build configuration list for PBXNativeTarget "JPUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744A22282DDA558800BED6B1 /* Debug */,
+				744A22292DDA558800BED6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		743F54752E3AB5B6004E1E8C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		743F546D2E3AB5A4004E1E8C /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		743F546F2E3AB5A4004E1E8C /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		743F54712E3AB5A4004E1E8C /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		743F54732E3AB5A4004E1E8C /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743F546C2E3AB5A4004E1E8C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalLocation;
+		};
+		743F54762E3AB5B6004E1E8C /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743F54752E3AB5B6004E1E8C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 744A220C2DDA558700BED6B1 /* Project object */;
+}

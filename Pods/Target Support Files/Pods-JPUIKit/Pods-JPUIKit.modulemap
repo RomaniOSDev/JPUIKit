@@ -1,0 +1,6 @@
+framework module Pods_JPUIKit {
+  umbrella header "Pods-JPUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
